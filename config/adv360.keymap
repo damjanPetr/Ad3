@@ -29,6 +29,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        test: test {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TEST";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "balanced";
+        };
     };
 
     macros {
@@ -39,11 +49,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                       &mo 3        &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
-&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                    &kp K_APP    &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
-&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)          &kp LCTRL        &kp LALT      &tog 4      &kp TAB      &kp LA(TAB)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
-&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                         &kp LGUI      &kp F3                                &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
-&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &mt LEFT_WIN ESCAPE  &lt 2 BACKSPACE  &trans        &caps_word  &lt 2 ENTER  &kp SPACE            &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
+&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                         &mo 3        &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
+&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                      &kp K_APP    &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
+&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)            &kp LCTRL        &kp LALT      &tog 4      &kp TAB      &kp LA(TAB)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
+&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                           &kp LGUI      &kp F3                                &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
+&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &test LEFT_WIN ESCAPE  &lt 2 BACKSPACE  &trans        &caps_word  &lt 2 ENTER  &kp SPACE            &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
             >;
         };
 
