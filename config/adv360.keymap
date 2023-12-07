@@ -25,6 +25,18 @@
             label = "CLEAR_ALL";
         };
 
+        tog_shift_l_change: tog_shift_l_change {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_press>,
+                <&tog 0>;
+
+            label = "TOG_SHIFT_L_CHANGE";
+        };
+
         #endif
 
         hm: homerow_mods {
