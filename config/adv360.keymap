@@ -58,21 +58,21 @@
 
         default_layer {
             bindings = <
-&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                                 &mo 3        &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
-&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                              &kp K_APP    &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
-&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)            &kp LCTRL            &kp LALT      &tog 4      &kp TAB          &kp LA(TAB)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
-&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                               &kp LGUI      &kp F3                                    &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
-&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &test LEFT_WIN ESCAPE  &symbol 2 BACKSPACE  &trans        &caps_word  &symbol 2 ENTER  &kp SPACE            &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
+&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                                        &mo 3        &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
+&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                                     &kp K_APP    &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
+&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)            &kp LCTRL            &kp LALT             &tog 4      &kp TAB          &kp LA(TAB)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
+&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                               &kp LGUI             &kp F3                                    &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
+&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &test LEFT_WIN ESCAPE  &symbol 2 BACKSPACE  &symbol 1 LC(V)      &caps_word  &symbol 2 ENTER  &kp SPACE            &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
             >;
         };
 
         keypad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans     &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans     &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &trans  &trans      &trans  &trans  &trans     &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans      &trans                     &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans      &trans  &trans  &kp KP_N0          &trans      &trans        &kp KP_DOT     &trans           &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans                                           &trans     &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans                                           &trans     &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
+&trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &trans  &bootloader  &trans  &trans      &trans  &trans  &trans     &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
+&trans  &trans  &trans  &trans     &trans     &trans                       &trans      &trans                     &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans  &trans  &trans  &trans     &trans             &trans       &trans  &trans      &trans  &trans  &kp KP_N0          &trans      &trans        &kp KP_DOT     &trans           &trans
             >;
         };
 
