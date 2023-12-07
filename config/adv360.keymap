@@ -68,7 +68,7 @@
                 <&macro_release>,
                 <&kp LEFT_SHIFT>,
                 <&macro_press>,
-                <&tog 0>;
+                <&to 0>;
 
             label = "M2";
         };
