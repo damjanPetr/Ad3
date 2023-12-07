@@ -21,8 +21,8 @@
         clear_all: clear_all {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp DELETE>;
-            label = "clear_all_ver";
+            bindings = <&kp LC(A)>;
+            label = "CLEAR_ALL";
         };
 
         tog_shift_l_change: tog_shift_l_change {
