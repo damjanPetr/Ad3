@@ -18,6 +18,13 @@
             bindings = <&kp RET>;
         };
 
+        clear_all: clear_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp DELETE>;
+            label = "CLEAR_ALL";
+        };
+
         #endif
 
         hm: homerow_mods {
