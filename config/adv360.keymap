@@ -20,9 +20,10 @@
 
         clear_all: clear_all {
             compatible = "zmk,behavior-macro";
+            label = "CLEAR_ALL";            
             #binding-cells = <0>;
             bindings = <&kp A>;
-            label = "CLEAR_ALL";
+            
         };
 
         tog_shift_l_change: tog_shift_l_change {
