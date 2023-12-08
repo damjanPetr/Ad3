@@ -116,11 +116,11 @@
 
         navigation {
             bindings = <
-&none  &none  &none      &none              &none           &none           &none                                  &none  &none      &none         &none     &none          &none  &none
-&none  &none  &none      &kp LC(BACKSPACE)  &kp LC(DELETE)  &kt LEFT_SHIFT  &none                                  &none  &kp LC(Z)  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &none
-&none  &none  &kp HOME   &kp END            &m2             &none           &none  &none  &none      &none  &none  &none  &none      &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
-&none  &none  &kp LC(X)  &kp LC(C)          &kp V           &none                         &none      &none                &none      &none         &none     &none          &none  &none
-&none  &none  &none      &none              &none                           &none  &m1    &none      &none  &none  &none             &none         &none     &none          &none  &none
+&none  &none  &none      &none              &none           &none           &none                                          &none  &none      &none         &none     &none          &none  &none
+&none  &none  &none      &kp LC(BACKSPACE)  &kp LC(DELETE)  &kt LEFT_SHIFT  &none                                          &none  &kp LC(Z)  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &none
+&none  &none  &kp HOME   &kp END            &m2             &none           &none  &none          &none      &none  &none  &none  &none      &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
+&none  &none  &kp LC(X)  &kp LC(C)          &kp V           &none                                 &none      &none                &none      &none         &none     &none          &none  &none
+&none  &none  &none      &none              &none                           &m1    &kp BACKSPACE  &none      &none  &none  &none             &none         &none     &none          &none  &none
             >;
         };
 
