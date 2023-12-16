@@ -69,6 +69,13 @@
 
             label = "M2";
         };
+
+        line_sel: line_sel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END)>;
+            label = "LINE_SEL";
+        };
     };
 
     keymap {
