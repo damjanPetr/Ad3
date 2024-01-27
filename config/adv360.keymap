@@ -82,6 +82,13 @@
             bindings = <&kp HOME &kp LS(END)>;
             label = "LINE_SEL";
         };
+
+        line_enter: line_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &to 0>;
+            label = "LINE_ENTER";
+        };
     };
 
     keymap {
@@ -91,8 +98,8 @@
             bindings = <
 &kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                                &mo 3        &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
 &kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                             &kp K_APP    &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
-&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)  &kp LCTRL            &kp LALT             &tog 4        &kp TAB          &kp LA(TAB)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
-&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                     &kp LGUI             &kp F3                                      &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
+&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)  &kp LCTRL            &kp LALT             &kp LEFT_ALT  &kp TAB          &kp LA(TAB)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
+&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                     &kp LGUI             &caps_word                                  &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
 &kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &kp ESCAPE   &symbol 2 BACKSPACE  &symbol 1 LC(V)      &sk LEFT_WIN  &symbol 2 ENTER  &kp SPACE            &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
             >;
         };
@@ -129,11 +136,11 @@
 
         navigation {
             bindings = <
-&none  &none  &none      &none              &none           &none           &none                                          &none  &none      &none         &none     &line_sel      &none  &none
-&none  &none  &none      &kp LC(BACKSPACE)  &kp LC(DELETE)  &kt LEFT_SHIFT  &none                                          &none  &kp LC(Z)  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &none
-&none  &none  &kp HOME   &kp END            &m2             &none           &none  &none          &none      &none  &none  &none  &none      &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
-&none  &none  &kp LC(X)  &kp LC(C)          &kp V           &none                                 &none      &none                &none      &none         &none     &none          &none  &none
-&none  &none  &none      &none              &none                           &m1    &kp BACKSPACE  &none      &none  &none  &none             &none         &none     &none          &none  &none
+&none  &none        &none      &none              &none           &none           &none                                          &none  &none      &none         &none     &line_sel      &none  &none
+&none  &none        &none      &kp LC(BACKSPACE)  &kp LC(DELETE)  &kt LEFT_SHIFT  &none                                          &none  &kp LC(Z)  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &none
+&none  &line_enter  &kp HOME   &kp END            &m2             &none           &none  &none          &none      &none  &none  &none  &none      &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
+&none  &none        &kp LC(X)  &kp LC(C)          &kp V           &none                                 &none      &none                &none      &none         &none     &none          &none  &none
+&none  &none        &none      &none              &none                           &m1    &kp BACKSPACE  &none      &none  &none  &none             &none         &none     &none          &none  &none
             >;
         };
 
