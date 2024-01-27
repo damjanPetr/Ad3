@@ -96,11 +96,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                                &mo 3        &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
-&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                             &kp K_APP    &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
-&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)  &kp LCTRL            &kp LALT             &kp LEFT_ALT  &kp TAB          &kp LA(TAB)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
-&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                     &kp LGUI             &caps_word                                  &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
-&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &kp ESCAPE   &symbol 2 BACKSPACE  &symbol 1 LC(V)      &sk LEFT_WIN  &symbol 2 ENTER  &kp SPACE            &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
+&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                                 &mo 3            &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
+&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                              &kp K_APP        &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
+&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)  &kp LEFT_WIN         &kp LEFT_CONTROL      &kp LEFT_ALT  &kp TAB          &symbol 1 LC(V)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
+&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                     &kp LEFT_ALT          &caps_word                                      &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
+&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &kp ESCAPE   &symbol 2 BACKSPACE  &kp LEFT_SHIFT        &tog 4        &symbol 2 ENTER  &kp SPACE                &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
             >;
         };
 
