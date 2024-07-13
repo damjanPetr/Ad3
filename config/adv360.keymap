@@ -96,11 +96,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                                 &mo 3            &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
-&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                              &kp K_APP        &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
-&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)  &kp LEFT_WIN         &kp LEFT_CONTROL      &kp LEFT_ALT  &kp TAB          &symbol 1 LC(V)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
-&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                     &kp LEFT_ALT          &caps_word                                      &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
-&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &kp ESCAPE   &symbol 2 BACKSPACE  &kp LEFT_SHIFT        &tog 4        &symbol 2 ENTER  &kp SPACE                &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
+&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                                    &mo 3            &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
+&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                                 &kp K_APP        &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
+&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)  &kp LEFT_WIN         &kp LEFT_CONTROL      &tog 4           &kp TAB          &symbol 1 LC(V)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
+&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                     &kp LEFT_ALT          &caps_word                                         &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
+&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &kp ESCAPE   &symbol 2 BACKSPACE  &kp LEFT_SHIFT        &kp RIGHT_SHIFT  &symbol 2 ENTER  &kp SPACE                &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
             >;
         };
 
@@ -118,8 +118,8 @@
             bindings = <
 &trans  &kp F1           &kp F2         &kp F3            &kp F4        &kp F5       &kp F11                                      &kp F12  &kp F6         &kp F7             &kp F8                &kp F9                 &kp F10  &trans
 &trans  &trans           &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp AT_SIGN  &trans                                       &trans   &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans   &trans
-&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL     &kp HASH     &trans   &trans  &trans      &trans  &trans  &trans   &kp PIPE       &kp COLON          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans   &trans
-&trans  &trans           &kp FSLH       &kp ASTERISK      &kp CARET     &kp PERCENT                   &trans      &trans                   &kp TILDE      &kp DOLLAR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans   &trans
+&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL     &kp UNDER    &trans   &trans  &trans      &trans  &trans  &trans   &kp PIPE       &kp COLON          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans   &trans
+&trans  &kp HASH         &kp FSLH       &kp ASTERISK      &kp CARET     &kp PERCENT                   &trans      &trans                   &kp TILDE      &kp DOLLAR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans   &trans
 &trans  &trans           &trans         &trans            &trans                     &trans   &trans  &trans      &trans  &trans  &trans                  &trans             &trans                &trans                 &trans   &trans
             >;
         };
