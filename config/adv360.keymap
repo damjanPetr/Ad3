@@ -89,6 +89,42 @@
             bindings = <&kp ENTER &to 0>;
             label = "LINE_ENTER";
         };
+
+        copy_nav: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_press>,
+                <&to 0 &kp LC(C) &tog 4>;
+
+            label = "COPY";
+        };
+
+        cut_nav: cut_nav {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_press>,
+                <&to 0 &kp LC(X) &tog 4>;
+
+            label = "CUT_NAV";
+        };
+
+        paste_nav: paste_nav {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_press>,
+                <&to 0 &kp LC(V) &tog 4>;
+
+            label = "PASTE_NAV";
+        };
     };
 
     keymap {
@@ -136,11 +172,11 @@
 
         navigation {
             bindings = <
-&none  &none        &none      &none              &none           &none           &none                                          &none  &none      &none         &none     &line_sel      &none  &none
-&none  &none        &none      &kp LC(BACKSPACE)  &kp LC(DELETE)  &kt LEFT_SHIFT  &none                                          &none  &kp LC(Z)  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &none
-&none  &line_enter  &kp HOME   &kp END            &m2             &none           &none  &none          &none      &none  &none  &none  &none      &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
-&none  &none        &kp LC(X)  &kp LC(C)          &kp V           &none                                 &none      &none                &none      &none         &none     &none          &none  &none
-&none  &none        &none      &none              &none                           &m1    &kp BACKSPACE  &none      &none  &none  &none             &none         &none     &none          &none  &none
+&none  &none        &none     &none              &none           &none           &none                                          &none  &none      &none         &none     &line_sel      &none  &none
+&none  &none        &none     &kp LC(BACKSPACE)  &kp LC(DELETE)  &kt LEFT_SHIFT  &none                                          &none  &kp LC(Z)  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &none
+&none  &line_enter  &kp HOME  &kp END            &m2             &none           &none  &none          &none      &none  &none  &none  &none      &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
+&none  &none        &cut_nav  &copy_nav          &paste_nav      &none                                 &none      &none                &none      &none         &none     &none          &none  &none
+&none  &none        &none     &none              &none                           &m1    &kp BACKSPACE  &none      &none  &none  &none             &none         &none     &none          &none  &none
             >;
         };
 
