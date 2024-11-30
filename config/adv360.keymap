@@ -163,7 +163,7 @@
         mod {
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &tog 6        &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &to 7         &tog 6        &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &to 0         &to 5        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
@@ -197,6 +197,16 @@
 &kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)  &kp LEFT_WIN   &kp LEFT_CONTROL      &tog 4           &kp TAB    &symbol 1 LC(V)  &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
 &kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                               &kp LEFT_ALT          &caps_word                                   &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
 &kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &kp ESCAPE   &kp BACKSPACE  &kp LEFT_SHIFT        &kp RIGHT_SHIFT  &kp ENTER  &kp SPACE                &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
+            >;
+        };
+
+        esc_default_ {
+            bindings = <
+&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                                            &to 0               &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp EQUAL
+&kp BSLH   &kp SQT    &kp COMMA  &kp DOT   &kp P      &kp Y   &kp LC(S)                                                                                         &kp K_APP           &kp F   &kp G   &kp C     &kp R     &kp L     &kp FSLH
+&kp DEL    &kp A      &kp O      &kp E     &kp U      &kp I   &kp LA(TAB)          &kp LEFT_WIN         &kp LEFT_CONTROL      &tog 4           &kp TAB          &symbol 1 LC(V)     &kp D   &kp H   &kp T     &kp N     &kp S     &kp MINUS
+&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                                             &kp LEFT_ALT          &caps_word                                            &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
+&kp HOME   &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT          &mt LEFT_WIN ESCAPE  &symbol 2 BACKSPACE  &kp LEFT_SHIFT        &kp RIGHT_SHIFT  &symbol 2 ENTER  &mt LEFT_WIN SPACE          &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp END
             >;
         };
     };
