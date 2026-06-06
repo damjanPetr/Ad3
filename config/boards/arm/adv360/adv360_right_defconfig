@@ -59,3 +59,8 @@ CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y
 
 CONFIG_ZMK_BLE=y
 CONFIG_ZMK_USB=y
+
+# Enable deep sleep support
+CONFIG_ZMK_SLEEP=y
+# Milliseconds of inactivity before entering deep sleep (5 minutes)
+CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=300000
